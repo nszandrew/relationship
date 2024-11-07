@@ -31,18 +31,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   // Funções para o carrossel no modal ("Ver Fotos")
   const momentPhotos = [
     ["imagens/conhecemos/fdp.png"], // Fotos para Momento 1
-    ["imagens/image2.png", "imagens/image.png"], // Fotos para Momento 2
+    ["imagens/image.jpg", "imagens/image2.jpg"], // Fotos para Momento 2
     ["imagens/viagem/image.jpg", "imagens/image2.jpg"], // Fotos para Momento 3
     ["imagens/namoro/image.jpg", "imagens/namoro/namoro.png", "imagens/namoro/alianca.jpg", "imagens/namoro/beijo.jpg", "imagens/namoro/caiu.jpg", "imagens/namoro/mordida.jpg", "imagens/namoro/palmeiras.jpg", "imagens/namoro/aw.jpg", "imagens/namoro/tatuagem.jpg"], // 4
     ["imagens/2023/japa.jpg", "imagens/2023/amor.png", "imagens/2023/amor2.png", "imagens/2023/amor3.png", "imagens/2023/amor4.png", "imagens/2023/amor5.png"], // 5
-    ["imagens/foto5.jpg", "imagens/foto6.jpg"], // 6
-    ["imagens/foto5.jpg", "imagens/foto6.jpg"], // 7
+    ["imagens/foto5.jpg"], // 6
+    ["imagens/foto5.jpg"], // 7
     ["imagens/image3.jpg", "imagens/socorro/gostosa.png", "imagens/socorro/gostosa2.jpg", "imagens/socorro/image.jpg"], // 8
     ["imagens/faculdade/alianca.jpg", "imagens/faculdade/beber.jpg", "imagens/faculdade/usjt.png"], // 9
     ["imagens/itanhaem/piscina.jpg", "imagens/itanhaem/ney.jpg", "imagens/itanhaem/linda.jpg"], // 10
     ["imagens/resto/tartaruga.jpg", "imagens/resto/parque.png", "imagens/resto/cirurgia.jpg", "imagens/resto/festa.jpg", "imagens/resto/nois.jpg", "imagens/resto/beijo.jpg", "imagens/resto/oque.png", "imagens/resto/amigos.png"], // 11
     ["imagens/bernardo/image2.png", "imagens/bernardo/pe.png", "imagens/bernardo/gordinho.png", "imagens/bernardo/cabecudo.png"],
-    ["imagens/aniversario/image.png", "imagens/aniversario/pe.png", "imagens/aniversario/gordinho.png", "imagens/aniversario/cabecudo.png"]
+    ["imagens/aniversario/image.png"]
   ];
   
   let currentMomentIndex = 0;
