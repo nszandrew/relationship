@@ -40,7 +40,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     ["imagens/image3.jpg", "imagens/socorro/gostosa.png", "imagens/socorro/gostosa2.jpg", "imagens/socorro/image.jpg"], // 8
     ["imagens/faculdade/alianca.jpg", "imagens/faculdade/beber.jpg", "imagens/faculdade/usjt.png"], // 9
     ["imagens/itanhaem/piscina.jpg", "imagens/itanhaem/ney.jpg", "imagens/itanhaem/linda.jpg"], // 10
-    ["imagens/resto/tartaruga.jpg", "imagens/resto/cirurgia.jpg", "imagens/resto/festa.jpg", "imagens/resto/nois.jpg", "imagens/resto/beijo.jpg", "imagens/resto/oque.png", "imagens/resto/amigos.png"], // 11
+    ["imagens/resto/tartaruga.jpg", "imagens/resto/parque.png", "imagens/resto/cirurgia.jpg", "imagens/resto/festa.jpg", "imagens/resto/nois.jpg", "imagens/resto/beijo.jpg", "imagens/resto/oque.png", "imagens/resto/amigos.png"], // 11
+    ["imagens/bernardo/image2.png", "imagens/bernardo/pe.png", "imagens/bernardo/gordinho.png", "imagens/bernardo/cabecudo.png"],
+    ["imagens/aniversario/image.png", "imagens/aniversario/pe.png", "imagens/aniversario/gordinho.png", "imagens/aniversario/cabecudo.png"]
   ];
   
   let currentMomentIndex = 0;
