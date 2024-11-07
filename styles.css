@@ -271,3 +271,34 @@ button.next { right: -40px; }
   opacity: 1;
   transform: translateY(0);
 }
+.gallery-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #ffecec;
+}
+
+.gallery-section h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #ff6f61;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
