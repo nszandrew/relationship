@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Nossa História de Amor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap">
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#momentos">Momentos</a></li>
+          <li><a href="#linha-do-tempo">Linha do Tempo</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>      
+    <div class="hero">
+      <h1>Nossa História</h1>
+      <p>Uma mensagem, um encontro no shopping e tudo mudou na nossa vida...</p>
+    </div>
+  </header>
+
+  <section id="sobre" class="about-us">
+    <h2>Sobre Nós</h2>
+    <p>Estive pensando muito sobre a gente, sobre tudo o que passamos juntos e os momentos que compartilhamos. Independentemente de tudo o que aconteceu, eu só queria te lembrar o quanto esses momentos foram importantes para mim. Passar um tempo com você sempre foi algo especial, e eu sou grato por cada sorriso, cada conversa e cada aventura que tivemos. Lembro de quando ríamos de coisas bobas, das conversas até tarde, das brincadeiras e dos planos que fazíamos juntos. Tudo isso fez parte de um capítulo muito bonito na minha vida, e esses momentos ainda trazem um sorriso ao meu rosto. Cada risada, cada abraço e até mesmo os momentos mais simples — tudo isso foi incrível porque era com você. Eu guardo essas lembranças com muito carinho. Independentemente do que o futuro reserve para nós, quero que você saiba que eu aprecio cada experiência que compartilhamos. Esses momentos são preciosos e sempre serão parte de mim. Obrigado por todos os momentos bons que tivemos. Foram esses momentos que tornaram o nosso relacionamento único e especial. Vou sempre guardar o melhor de nós dois no meu coração.</p>
+  </section>
+
+    
+    <!-- Exemplo de um carrossel de imagens para um momento específico -->
+    <section id="momentos" class="gallery">
+        <h2>Momentos Especiais</h2>
+        <div class="photo-carousel">
+          <button class="prev" onclick="changeSlidePage(-1)">&#10094;</button>
+          <div class="carousel-container-page">
+            <img src="imagens/image.jpg" alt="Momento 1" class="carousel-image-page">
+            <img src="imagens/image2.jpg" alt="Momento 2" class="carousel-image-page">
+            <img src="imagens/image3.jpg" alt="Momento 3" class="carousel-image-page">
+          </div>
+          <button class="next" onclick="changeSlidePage(1)">&#10095;</button>
+          <p>Nossas viagens juntos ❤️</p>
+        </div>
+      </section>
+    
+    <!-- Repita o bloco acima para outros momentos especiais, com o índice incrementado no botão -->
+  </section>
+  
+  
+
+  <section id="linha-do-tempo" class="timeline">
+    <h2>Pequenos momentos da nossa História</h2>
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="timeline-date">Março 2022</div>
+        <div class="timeline-content">
+          <h3>Quando nos conheçemos</h3>
+          <p>Nos conheçemos realmente em Março de 2022 kkk quando suas amigas vieram falar de você pra mim, mas nosso primeiro contato veio 5 meses depois em setembro, quando teve aquela festa na escola e você tava de lider de torcida kkk que saudades...</p>
+          <button class="show-photos" onclick="openModal(0)">Ver Fotos</button>  
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Setembro 2022</div>
+        <div class="timeline-content">
+          <h3>Primeiro Encontro</h3>
+          <p>Nosso primeiro encontro foi em Novembro no shopping e foi muito foda, a gente se divertiu demais, eu enrolei um vendedor de sofa e coitado dele. A gente viu Adao negro se eu nao me engano, e foi muito bom pq eu nao conseguia concentrar no filme, por causa da minha barriga kkkkk... Mas oque eu sempre lembro foi quando eu te vi la e pensei "CARALHO, QUE MENINA BONITA.. mas sem bunda kkkk", e hoje eu continuo pensando toda vez que se te vejo "CARALHO, QUE MULHER LINDA"</p>
+          <button class="show-photos" onclick="openModal(1)">Ver Fotos</button>  
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Ainda em 2022</div>
+        <div class="timeline-content">
+          <h3>Primeira viagem juntos</h3>
+          <p>A nossa primeira viagem juntos para sua casa na praia (q sdds incluse), eu lembro que vc chamou e eu pensei "cara, que mina loka, nem me conhece direito", mas foi muito bom e foi nessas viagens que eu me apaixonei kkk a gente nao desgrudava um do outro, eu achava que seu pai me odiava pq eu sempre tava sarrando em voce e eu que nao ia parar se ngm tava reclamando kkkkkkkk</p>
+          <button class="show-photos" onclick="openModal(2)">Ver Fotos</button>  
+        </div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Março 2023</div>
+      <div class="timeline-content">
+        <h3>Nosso namoro</h3>
+        <p>Nosso namoro foi bem estranho como começou, no carro e eu com uma aliança kkkk mas a partir dali eu percebi que viver com você era mais facil, era mais facil ficar com você para esquecer meus problemas e sempre quando eu dormia agarrado com você eu ficava em PAZ como se o mundo parasse e você era a unica coisa que importava no momento e ainda hoje é assim... eu tenho a felicidade de falar que voce foi e sempre sera minha primeira em TUDO, meu primeiro Amor, Namoro, Beijo, TUDO.. e desde lá eu quero viver a primeira vez das coisas com voce para sempre, desde nosso primeiro carro a nossa primera filha.. com voce sempre. </p>
+        <button class="show-photos" onclick="openModal(3)">Ver Fotos</button>
+      </div>
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-date">ANO de 2023</div>
+        <div class="timeline-content">
+          <h3>Nosso 2023</h3>
+          <p>Foi um ano otimo, começo de relacionamento e tudo flores, eu vivi esse ano como se fosse um aposentado curtindo com sua mulher kkk viajamos BASTANTE, saimos, ficamos agarrados e foi nesse ano, que eu percebi que EU TE AMAVA PRA CARALHO e sempre te amarei</p>
+          <button class="show-photos" onclick="openModal(4)">Ver Fotos</button>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-date">25 de dezembro 2023</div>
+        <div class="timeline-content">
+          <h3>Natal de 2023</h3>
+          <p>Nosso primeiro Natal na sua casa, eu lembro que tivemos uma conversa na sua varanda sobre a vida e tinhamos sempre muito incomun por incrivel que pareça kkk sempre discordamos das coisas mas alem disso queremos viver o mesmo, uma vida boa sem preocupações, com um trabalho bom e aproveitar a vida ao maximo viajando e depois pensar em filhos.</p>
+          <button class="show-photos" onclick="openModal(5)">Ver Fotos</button>
+        </div>  
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-date">31 de Dezembro 2023</div>
+        <div class="timeline-content">
+          <h3>Ano Novo de 2023</h3>
+          <p>Nosso ano novo na minha casa começou tudo otimo, foi a primeira vez que você dormiu em casa e eu adorei, como ja disse me sinto em paz com você mas nesse dia eu me senti mal de ter te separado da sua famiia no ano novo e você mesmo assim fez isso por mim e foi um dia que eu nunca vou esquecer.. na visao geral foi um bom ano para a gente, se conhecemos melhor e aproveitamos ao maximo!! ❤️ </p>
+          <button class="show-photos" onclick="openModal(6)">Ver Fotos</button>  
+        </div>       
+
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-date">Janeiro 2024</div>
+        <div class="timeline-content">
+          <h3>Viagem para Socorro</h3>
+          <p>E nosso 2024 começou mal pq vc parou de ir na academia comigo para fazer um curso que nunca fez kkkkkk mas naquela nossa viagem para Socorro em Janeiro, PUTA QUE PARIU, voce esta no AUGE DA BELEZA, eu sempre vou lembrar daquele video que eu gravei de você gravando um video que esta no meu tiktok ainda kkkkk QUE MULHER GOSTOSA! eu nunca vou me esquecer do quanto eu fiquei 'animado' nesse dia KKKKK</p>
+          <button class="show-photos" onclick="openModal(7)">Ver Fotos</button>      
+        </div>     
+      <!-- Adicione mais itens conforme desejar -->
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-date">Fevereiro 2024</div>
+        <div class="timeline-content">
+            <h3>Fevereiro 2024</h3>
+            <p>Foi quando começei minha faculdade e iniciei meu sonho de ir pra faculdade junto com voce de dar um role nos barzinho beber e depois fazer merda kkkkkkk reclamar junto que a sao judas destruiu nossas vidas </p>
+            <button class="show-photos" onclick="openModal(8)">Ver Fotos</button>
+        </div>
+</div>
+    <div class="timeline-item">
+        <div class="timeline-date">Maio 2024</div>
+        <div class="timeline-content">
+            <h3>Viagem para Itanhaem</h3>
+            <p>Aquela viagem para Itanhaem foi muito bom com aquela psicina que "ESQUENTAVA" A MINHA CAMISA DO NEYMAR <3 kkkkk eu tirei uma foto sua que SE LOKO só de falar eu fico alegre.... foi tambem proximo ao dia que sua tia morreu e foi ai que vivemos algo diferente, uma conexao mais profunda nao de alegrias mas de dores apenas, e eu pensei no velorio dela que eu queria cuidar de voce para sempre, eu odiava ver você chorar e seu choro pausado de desespero nesse dia me traz uma lembrança muito forte, eu senti que eu precisava te dar o mundo para você voltar a ser uma menina linda e alegre de novo, e eu sempre vou cumprir vou dar meu maximo para cumprir oque eu prometi pra mim mesmo</p>
+            <button class="show-photos" onclick="openModal(9)">Ver Fotos</button>    
+        </div>  
+</div> 
+    <div class="timeline-item">
+        <div class="timeline-date">Junho - Até agora 2024</div>
+        <div class="timeline-content">
+            <h3>Resto do ano</h3>
+            <p>Mudou muita coisa né, se voce olhar nossa retrospectiva de 2023 vai nem reconhecer nos dois kkkk mas esse ano foi foda, eu fiz uma cirurgia que eu sacrifiquei muito tempo por isso, voce teve o ENEM e esta tendo até agora (Estou torcendo muito por você por mais que eu queira voce indo pra faculdade comigo, você é a pessoa que eu mais tenho certeza que pode passar em uma Federal tranquilamente só falta acreditar em você mesma), saimos diversas vezes pro shopping, playcenter, parques, parque de diversao. e nossas brigas marcaram muito né, eu sei nao tem como nao lembrar, eu quero que você toda vez que olhar para mim tenha aquele brilho no olho que eu amo sempre do meu lado, e eu SEI que a gente só vai superar isso se lutar, juntos, não magoar um ao outro e realmente entender o nosso relacionamento e como funciona nossas cabeças, um do outro, quero voltar com você mas quero voltar como era, não como era por ser novo, mas como era em relação ao amor e se entregar ao outro, eu sinto tanto falta de você falar que me ama, isso acaba comigo sempre que lembro que você não está agindo igual antes comigo, seja para se afastar ou para se proteger do que se tornamos.. eu acredito que quero que sejamos melhores, tanto eu para voce quanto voce para mim!! </p>
+            <button class="show-photos" onclick="openModal(10)">Ver Fotos</button>    
+        </div>      
+  <!-- Adicione mais itens conforme desejar -->
+</div>
+  </section>
+  <section id="sobre" class="about-us">
+    <h2>Final..</h2>
+    <p>"Oi minha vida,
+
+        Sabe, olhando para tudo o que vivemos, percebo o quanto nossa história é cheia de memórias que vão ficar para sempre. Tivemos tanta coisa, não foi? Altos e baixos, risos e choros, idas e vindas… e, apesar de tudo, cada um desses momentos me marcou profundamente.
+        
+        Passamos por tanta coisa juntos: lembra da sua preocupações com o ENEM, dos dias do meu primeiro trabalho, Das noites em que assistíamos filmes. do filme Eduarda e sua nova familia kk. E, claro, não dá pra esquecer as conversas, os conselhos, os planos para o futuro, e até as pequenas bobagens que só faziam sentido para nós dois.
+        
+        Mudamos muito desde o início, e tudo o que passamos nos moldou de alguma forma. Eu olho para as fotos, releio nossas mensagens e penso em como construímos uma história que é nossa, com todas as imperfeições e momentos de pura alegria. Brigamos muito, sim, especialmente neste último ano, e isso nos trouxe até onde estamos agora. Mas essas brigas também foram parte do nosso crescimento, porque cada uma delas nos mostrou o quanto nos importávamos, mesmo quando as coisas ficavam difíceis.
+        
+        Eu fiz esse site porque queria criar um lugar onde nossa história pudesse ser lembrada, onde cada capítulo, cada mensagem, cada foto pudesse estar guardada como uma lembrança de tudo o que fomos. É uma forma de ter um pedacinho da gente sempre acessível, pra quando bater saudade, ou para relembrar o quanto a gente significa um para o outro. Não fiz isso só para lembrar dos momentos felizes, mas para honrar tudo o que passamos juntos — o bom e o ruim, porque foi isso que fez nossa história ser tão única.
+        
+        Ainda carrego a esperança de que, talvez um dia, possamos voltar a ser aqueles dois "idiotas" de antes (kkk), mas com uma nova mentalidade, fazendo bem um ao outro, sendo melhores juntos. Mas, seja como for, eu amo você, e mesmo que as coisas não sejam mais como antes, essa história ainda é especial para mim.
+        
+        Cada vez que releio nossas mensagens e vejo o quanto nos amávamos, não posso evitar de sentir saudades. E sei que o futuro é incerto, seja ele com a gente ou com outros caminhos. Mas esse site vai estar sempre aqui, para você voltar e revisitar nossa história, seja lá onde estiver, casada com outra pessoa, ou quem sabe comigo, rindo juntos de tudo isso no futuro.
+        
+        Usei meu dom de programar para demonstrar oque sinto por você, e eu nao sou muito bom e fazer sites minha area é outra mas é isso.. espero que goste disso deu muito trabalho, se eu tirei um sorriso de você já valeu a pena"**</p>
+  </section>
+
+  <div id="photo-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="photo-carousel">
+        <button class="prev" onclick="changeSlideModal(-1)">&#10094;</button>
+        <div class="carousel-container">
+          <!-- As imagens serão adicionadas dinamicamente -->
+        </div>
+        <button class="next" onclick="changeSlideModal(1)">&#10095;</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="background-music" loop>
+    <source src="audio/ShawnMendes.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+  <button onclick="toggleMusic()">🎵 Música</button>
+  <button id="music-button" onclick="toggleMusic()">🎵 Música</button>
+
+
+  <footer id="contato">
+    <p>Feito com ❤️ por seu Amor</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
