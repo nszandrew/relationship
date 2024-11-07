@@ -224,6 +224,22 @@
     </div>
   </div>
 
+  <section id="password-section" class="password-section">
+    <h2>Área Exclusiva</h2>
+    <p>Dica: minha senha kk</p>
+    <p>Digite a senha para acessar essa área:</p>
+    <input type="password" id="password-input" placeholder="Digite a senha">
+    <button onclick="checkPassword()">Entrar</button>
+    <p id="error-message" style="color: red; display: none;">Senha incorreta. Tente novamente.</p>
+</section>
+
+<section id="exclusivo" class="exclusive-section" style="display: none;">
+    <h2>Área Exclusiva</h2>
+    <p>Caramba, você acertou a senha mesmo! Aqui está um botão para acessar algo especial:</p>
+    <button id="secretLinkButton" style="display: none;" onclick="redirectToSecret()">Ir para o Conteúdo Secreto</button>
+</section>
+
+
   <audio id="background-music" loop>
     <source src="audio/ShawnMendes.mp3" type="audio/mpeg">
     Seu navegador não suporta o elemento de áudio.

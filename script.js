@@ -113,4 +113,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const nav = document.querySelector("nav ul");
     nav.style.display = nav.style.display === "flex" ? "none" : "flex";
   }
+
+
+
+function checkPassword() {
+  const passwordInput = document.getElementById("password-input").value;
+  const correctPassword = "199204";
+  if (passwordInput === correctPassword) {
+      document.getElementById("password-section").style.display = "none";
+      document.getElementById("exclusivo").style.display = "block";
+      document.getElementById("secretLinkButton").style.display = "block";
+  } else {
+      document.getElementById("error-message").style.display = "block";
+  }
+}
+
+
+// Função para redirecionar para o link secreto
+function redirectToSecret() {
+    window.location.href = "https://wa.link/qashp0"; // Substitua pelo link desejado
+}
+
   
