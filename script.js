@@ -134,4 +134,76 @@ function redirectToSecret() {
     window.location.href = "https://wa.link/qashp0"; // Substitua pelo link desejado
 }
 
+function toggleTheme() {
+  const body = document.body;
+  const themeSound = new Audio('audio/harrypotter.m4a'); // Cria o áudio
+  themeSound.volume = 0.2; // Reduz o volume para 50%
+  
+  const themeToggleButton = document.getElementById("theme-toggle-button");
+  const isHarryPotterTheme = body.classList.contains('harry-potter-theme');
+  const isSlytherinTheme = body.classList.contains('slytherin-theme');
+
+  // Aplica a lógica para alternar entre os três temas: Normal, Harry Potter e Sonserina
+  if (!isHarryPotterTheme && !isSlytherinTheme) {
+    // Ativa o tema Harry Potter
+    themeSound.currentTime = 0; // Reinicia o áudio
+    themeSound.play();
+    createMagicDust(); 
+        // Limita o tempo de reprodução do áudio a 7 segundos
+        setTimeout(() => {
+          themeSound.pause();
+        }, 7000);
+    
+    // Função de efeito mágico (caso já esteja implementada)
+    body.classList.add('harry-potter-theme');
+    themeToggleButton.classList.add('glow');
+    themeToggleButton.textContent = "🐍 Alternar para o Tema Sonserina";
+
+  } else if (isHarryPotterTheme) {
+    // Alterna para o tema Sonserina
+    body.classList.remove('harry-potter-theme');
+    body.classList.add('slytherin-theme');
+    themeToggleButton.classList.remove('glow');
+    themeToggleButton.textContent = "Alternar para o Tema Normal";
+
+  } else if (isSlytherinTheme) {
+    // Alterna de volta para o tema Normal
+    body.classList.remove('slytherin-theme');
+    themeToggleButton.textContent = "⚡ Alternar para o Tema Harry Potter";
+  }
+
+  // Aplica a classe de fade-out para a animação de saída
+  body.classList.add('fade-out');
+
+  // Alterna o tema após o delay da animação
+  setTimeout(() => {
+    body.classList.remove('fade-out');
+    body.classList.add('fade-in');
+
+    setTimeout(() => {
+      body.classList.remove('fade-in');
+    }, 500);
+  }, 500);
+
+  // Para o áudio após 7 segundos, caso o tema Harry Potter esteja ativo
+  if (isHarryPotterTheme) {
+    setTimeout(() => {
+      themeSound.pause();
+    }, 7000);
+  }
+}
+
+
+function createMagicDust() {
+  for (let i = 0; i < 50; i++) {
+    const dust = document.createElement("div");
+    dust.classList.add("magic-dust");
+    dust.style.left = `${Math.random() * 100}vw`;
+    dust.style.top = `${Math.random() * 100}vh`;
+    dust.style.animationDuration = `${Math.random() * 4 + 2}s`; // Duração aleatória para cada partícula
+    document.body.appendChild(dust);
+  }
+}
+
+
   

@@ -6,9 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap">
+  <audio id="theme-sound" src="audio/harrypotter.m4a" preload="auto"></audio>
 </head>
 <body>
   <header>
+    <button id="theme-toggle-button" onclick="toggleTheme()">⚡ Alternar para o Tema Harry Potter</button>
+    <div class="slytherin-symbol"></div>
+    <div class="gryffindor-symbol"></div>
     <nav>
         <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
         <ul>
